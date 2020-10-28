@@ -43,10 +43,6 @@ function Home() {
     getApi()
   }, [newSearch, setNewSearch])
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    
-  }
 
 
   return (
