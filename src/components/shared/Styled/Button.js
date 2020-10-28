@@ -7,5 +7,14 @@ color: white;
 font-size: 36px;
 font-weight: bold;
 cursor: pointer;
+
+&:focus {
+  outline: 0;
+}
+
+&:active {
+  color: black;
+  background-color: white;
+}
 `
 export default Button

@@ -2,20 +2,32 @@ import React from 'react'
 import styled from 'styled-components'
 
 const StyledFooter = styled.footer`
-position: absolute;
+position: fixed;
 width: 100%;
 bottom: 0;
 left: 0;
-color: White;
+color: black;
 font-size: 36px;  
-background-color: black;
-height: 80px;
+height: 9vh;
+padding: 10px;
+margin-top: 20px;
+align-items: center;
+border-top: 1px solid black;
+
+img {
+  width: 100px;
+  height: 60px;
+  margin: 20px; 
+}
+img:hover{
+  transform: translateY(-4px);
+}
 `
 
 function Footer() {
   return (
     <StyledFooter>
-      <a href="https://github.com/dannymichaels" target="_blank" rel="noreferrer">Github</a>
+      <a href="https://github.com/dannymichaels" target="_blank" rel="noreferrer"><img src="https://www.flaticon.com/premium-icon/icons/svg/527/527589.svg" alt="GitHub"></img></a>
   </StyledFooter>
   )
 }
