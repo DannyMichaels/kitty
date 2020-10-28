@@ -1,4 +1,4 @@
-import Home from './screens/Home'
+import Home from './screens/Home/Home'
 import Layout from './components/shared/Layout/Layout'
 import { Route, Switch } from 'react-router-dom'
 
