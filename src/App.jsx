@@ -1,13 +1,16 @@
 import Home from './screens/Home/Home'
 import Layout from './components/shared/Layout/Layout'
-import { Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    
-    <Layout>
-    <Home />
-    </Layout>
+    <Router>
+      <Layout>
+   <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+   </Layout>
+      </Router>
   );
 }
 
