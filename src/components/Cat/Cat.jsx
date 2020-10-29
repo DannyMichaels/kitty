@@ -25,7 +25,7 @@ function Cat(props) {
     <CatContainer>
         <h3> Name: &nbsp; {props.cat.fields.name}</h3>
       <h3>Breed: &nbsp; {props.cat.fields.breed}</h3>
-        <img src={props.cat.fields.image} alt={props.cat.fields.name} />
+        <img src={props.cat.fields.image} alt="cat" />
     </CatContainer>
   )
 }
