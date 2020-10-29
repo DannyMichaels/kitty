@@ -5,9 +5,14 @@ import Footer from '../Footer/Footer'
 function Layout(props) {
   return (
     <>
-    <Nav />
-     {props.children} 
-      <Footer />
+       <div className='layout'>
+      <Nav />
+      <div className="layout-children">
+
+          {props.children} 
+          </div>
+        <Footer />
+        </div>
       </>
   )
 }

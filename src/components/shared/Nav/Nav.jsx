@@ -14,6 +14,7 @@ const Navbar = styled.nav`
     box-shadow: 1px 1px 1px .3px black;
     align-items: center;
     justify-content: space-between;
+    flex-flow: row;
     
 
 a {
@@ -22,6 +23,7 @@ a {
   font-size: 36px;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
+  margin-right: 20px;
 }
 
 img {
@@ -38,9 +40,29 @@ a:hover{
   transform: scale(1.004);
 }
 
+.right_link{
+  display: inline-block;
+}
+.right__link:hover{
+  display: inline-block;
+  transform: skew(-5deg);
+}
+
 .nav__right{
   margin-right: 30px;
+  
 }
+
+.lol {
+  text-decoration: none;
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  margin-right: 20px;
+  cursor: default;
+}
+
 `
 
 function Nav() {
@@ -49,7 +71,8 @@ function Nav() {
     <Navbar>
       <NavLink to='/' ><img src="https://www.flaticon.com/svg/static/icons/svg/821/821946.svg" alt="Kitty Logo" />Kitty</NavLink> 
       <div className="nav__right">
-      <NavLink to='/create-cat' >Create Cat</NavLink> 
+        <NavLink to='/create-cat' > <span className="right__link">Create Cat</span> </NavLink>  <span className="lol">|</span>
+        <NavLink to='/cat-gallery'><span className="right__link">Cat Gallery</span></NavLink> 
       </div>
     </Navbar>
   )

@@ -6,9 +6,9 @@ position: fixed;
 width: 100%;
 bottom: 0;
 left: 0;
-color: black;
+color: black; 
 font-size: 36px;  
-height: 9vh;
+height: 7vh;
 padding: 10px;
 margin-top: 20px;
 align-items: center;
@@ -16,7 +16,7 @@ border-top: 1px solid black;
 
 img {
   width: 100px;
-  height: 60px;
+  height: 50px;
   margin: 20px; 
 }
 img:hover{

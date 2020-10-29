@@ -16,12 +16,19 @@ export const getCat = async () => {
   }
 };
 
-const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}`;
+const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/addedCats`;
 
-export const createCat = async () => {
+export const getCats = async () => {
   try {
-
+    const response = await axios.get(airtableURL, {
+      headers: {
+        Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+      },
+    });
+    const cats = response.data.records;
+    return cats;
   } catch (error) {
     throw error;
   }
 };
+
