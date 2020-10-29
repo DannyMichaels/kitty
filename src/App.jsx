@@ -2,7 +2,7 @@ import Home from './screens/Home/Home'
 import CreateCat from './screens/CreateCat/CreateCat'
 import CatGallery from './screens/CatGallery/CatGallery'
 import Layout from './components/shared/Layout/Layout'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
