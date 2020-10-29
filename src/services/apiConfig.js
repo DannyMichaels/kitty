@@ -16,3 +16,12 @@ export const getCat = async () => {
   }
 };
 
+const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}`;
+
+export const createCat = async () => {
+  try {
+
+  } catch (error) {
+    throw error;
+  }
+};

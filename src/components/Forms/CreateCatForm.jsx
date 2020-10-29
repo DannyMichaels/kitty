@@ -9,9 +9,7 @@ display: flex;
 align-items: center;
 flex-direction: column;
 
-
-input{
- 
+input{ 
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -27,10 +25,14 @@ function CreateCatForm(props) {
     <div style={{ display: 'flex', justifyContent: 'center'}}>
       <Form onSubmit={props.handleSubmit}>
         <h1>Create Cat</h1>
-        <input type="text" name='name' value={props.name} onChange={(e) => props.setName(e.target.value)}placeholder="Enter Cat Name" /> <br />
-        <input type="text" name='breed' value={props.breed} onChange={(e) => props.setBreed(e.target.value)} placeholder="Enter Cat Breed" /> <br />
-        <input type="text" name='image' value={props.image} onChange={(e) => props.setImage(e.target.value)}placeholder="Enter Cat Image" /> <br />
-        <button>Submit</button>
+              <label htmlFor="name" type="text"> </label>
+          <input type="text" name='name' value={props.name} placeholder="Enter Cat Name" onChange={(e) => props.setName(e.target.value)} /> <br />
+          <label htmlFor="breed" type="text"> </label>
+ <input type="text" name='breed' value={props.breed} placeholder="Enter Cat Breed" onChange={(e) => props.setBreed(e.target.value)} /> <br />
+        <label htmlFor="image" type="text"></label>
+
+          <input type="text" name='image' value={props.image} placeholder="Enter Cat Image" onChange={(e) => props.setImage(e.target.value)} /> <br />
+          <button>Submit</button>
       </Form>
     </div>
   )

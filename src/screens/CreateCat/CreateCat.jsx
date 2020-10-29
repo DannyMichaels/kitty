@@ -21,6 +21,7 @@ function CreateCat() {
       return
     } 
 
+   alert('Cat Added!')
     const fields = {
       name,
       breed,
