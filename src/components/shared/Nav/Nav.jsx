@@ -13,7 +13,7 @@ const Navbar = styled.nav`
     padding: 5px 0;
     box-shadow: 1px 1px 1px .3px black;
     align-items: center;
-
+    justify-content: space-between;
     
 
 a {
@@ -22,7 +22,6 @@ a {
   font-size: 36px;
   font-weight: bold;
   font-family: 'Indie Flower', cursive;
-
 }
 
 img {
@@ -39,13 +38,19 @@ a:hover{
   transform: scale(1.004);
 }
 
+.nav__right{
+  margin-right: 30px;
+}
 `
 
 function Nav() {
   return (
     
     <Navbar>
-    <NavLink to='/' ><img src="https://www.flaticon.com/svg/static/icons/svg/821/821946.svg" alt="Kitty Logo" />Kitty</NavLink> 
+      <NavLink to='/' ><img src="https://www.flaticon.com/svg/static/icons/svg/821/821946.svg" alt="Kitty Logo" />Kitty</NavLink> 
+      <div className="nav__right">
+      <NavLink to='/create-cat' >Create Cat</NavLink> 
+      </div>
     </Navbar>
   )
 }
