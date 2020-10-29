@@ -13,6 +13,8 @@ padding: 10px;
 margin-top: 20px;
 align-items: center;
 border-top: 1px solid black;
+z-index: 1;
+background-color: white;
 
 img {
   width: 100px;

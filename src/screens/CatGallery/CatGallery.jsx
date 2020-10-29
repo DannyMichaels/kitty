@@ -18,7 +18,7 @@ function CatShowcase() {
     alignItems: 'center',
       justifyContent: 'center',
       flexWrap: 'wrap',
-      margin: '10px'}}>
+      marginBottom: '40px'}}>
       {cats.map((cat) => (
             <Cat
               style={{ textAlign: "center" }}
