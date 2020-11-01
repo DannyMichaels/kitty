@@ -4,15 +4,20 @@ import Cat from "../../components/Cat/Cat"
 
 function CatShowcase() {
   const [cats, setCats] = useState([]);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const getApi = async () => {
       const catResponse = await getCats() 
       setCats(catResponse);
+      setLoading(false)
     };
     getApi();
   }, []);
 
+  if (loading) {
+    return <h1 style={{ textAlign: 'center', margin: '0 auto' }}>LOADING CAT GALLERY...</h1>
+  }
   return (
     <div className='cat-container' style={{ display: 'flex',
     alignItems: 'center',

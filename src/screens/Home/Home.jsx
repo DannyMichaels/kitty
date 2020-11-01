@@ -39,7 +39,7 @@ function Home() {
     <div className="home">
       <div>
         <div>
-          { loading ? <div>...LOADING CAT</div> : catData && <img src={catData.url} alt="cat"/>}
+          { loading ? <div style={{fontSize: '36px'}}>LOADING CAT...</div> : catData && <img src={catData.url} alt="cat"/>}
         </div>
       </div>  
     <Button onClick={() => setCount(count + 1)}>GET CAT</Button>
