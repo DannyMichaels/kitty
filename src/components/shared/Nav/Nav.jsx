@@ -15,6 +15,7 @@ const Navbar = styled.nav`
   align-items: center;
   justify-content: space-between;
   flex-flow: row;
+  margin-bottom: 20px;
 
   a {
     text-decoration: none;
