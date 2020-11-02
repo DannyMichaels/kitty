@@ -1,4 +1,4 @@
-### Kitty
+### Kitty 🐈
 Just a silly Front-End React Website I made.
 
 ## Features
