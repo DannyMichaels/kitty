@@ -3,7 +3,7 @@ Just a silly Front-End React Website I made.
 
 ## Features
 - Get a random cat image by clicking on the button on the homepage (calling an API)
-- Add your cat to the cat gallery so people can see!
+- Add your cat to the cat gallery so people can see (posting to an API)
 - Play Cat-Mouse-Toe! (Tic-Tac-Toe)
 
 ## Styling
