@@ -13,4 +13,4 @@ Right now not much is going on but I'll add more to it later
 
 ## Ideas
 - I'm thinking of adding a dark mode button to the page.
-- I'm thinking of adding a "virtual pet", sort of "tamagochi" style, and associate it to an authenticated user, you'll be able to feed it, play games to get currency to feed it, etc.
+- I'm thinking of adding a "virtual pet", sort of "tamagochi" style, and associate it to an authenticated user, you'll be able to feed it, play games to get currency to feed it, etc, for that I'll use a rails back-end.
