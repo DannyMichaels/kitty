@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Home.css";
 import { getCat } from "../../services/apiConfig";
 import Button from "../../components/shared/Styled/Button";
@@ -17,20 +17,21 @@ function Home() {
       const response = await getCat();
       setCatData(response[0]);
       setLoading(false);
+      setCount((currentCount) => (currentCount += 1));
     };
+
     getApi();
   }, []);
 
-  useEffect(() => {
-    if (count + 1) {
-      const getApi = async () => {
-        const response = await getCat();
-        setCatData(response[0]);
-        setLoading(false);
-      };
-      getApi();
-    }
-  }, [count]);
+  const fetchRequest = useCallback(() => {
+    const getApi = async () => {
+      const response = await getCat();
+      setCatData(response[0]);
+      setLoading(false);
+      setCount((currentCount) => (currentCount += 1));
+    };
+    getApi();
+  }, []);
 
   return (
     <div className="home">
@@ -43,9 +44,8 @@ function Home() {
           )}
         </div>
       </div>
-      <Button onClick={() => setCount((currentCount) => currentCount + 1)}>
-        GET CAT
-      </Button>
+
+      <Button onClick={fetchRequest}>GET CAT</Button>
     </div>
   );
 }
