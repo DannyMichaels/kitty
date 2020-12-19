@@ -40,6 +40,8 @@ function Home() {
     const response = await getCat();
     // once the request is sent, update state again
     setCatData(response[0]);
+    setCount((currentCount) => (currentCount += 1));
+
     if (isMounted.current)
       // only update if we are still mounted
       setIsSending(false);
