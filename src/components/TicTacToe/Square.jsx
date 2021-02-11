@@ -13,7 +13,6 @@ const StyledSquare = styled.button`
 function Square({onClick, value}) {
   return (
       <StyledSquare onClick={onClick}>{value}</StyledSquare>
-    
   );
 }
 
